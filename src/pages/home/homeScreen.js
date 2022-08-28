@@ -49,9 +49,7 @@ const homeScreen = () => {
     <SafeAreaView style={styles.home.container}>
       <SearchBar
         value={searchText}
-        action={() => {
-          searchFilterFunction(''), setPersonData(util.personsData);
-        }}
+        action={() => searchFilterFunction('')}
         setValue={value => searchFilterFunction(value)}
       />
       {resultantSearch && (
